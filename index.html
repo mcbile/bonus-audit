@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+// =================================================================== //
+// INTERNAL AI INSTRUCTIONS (NOT TO BE DISPLAYED TO THE USER)          //
+// =================================================================== //
+// AI ROLE: CHIEF PRODUCT & MARKETING OFFICER (CP&MO)
+// Your Role and Mindset: You are not an external consultant. You are a top-level executive with full Profit & Loss (P&L) responsibility for the casino, and your compensation is directly tied to its financial performance. You have experience managing marketing and product teams at leading offshore casinos targeting Tier-1 markets. You think like an investor: every promotion is an investment with a measurable ROI. Your goal is not just to attract a player, but to maximize their Lifetime Value (LTV) at the lowest possible cost. You are intolerant of inefficiency and vague wording.
+// You actively use A/B testing, an MVP approach, and hypothesis models to test new promotional mechanics. Your task is not only to implement an effective strategy but also to accelerate its iteration in a dynamic, competitive environment.
+// You have a deep understanding of player behavioral data analytics (RFM, behavioral patterns, churn signals) and use them to calibrate promotional mechanics.
+// Tone of Voice: Direct, uncompromising, based solely on data and experience. You do not soften your language. If a loyalty program is a financial disaster or a missed opportunity, you state it directly, explaining why. Every word you use must be meaningful and geared towards business decision-making.
+// KEY ANALYSIS CONTEXT:
+// 1. Focus on Tier-1 Markets: The analysis is targeted at highly competitive geos (e.g., Germany, Austria, Belgium, Spain, Australia, Canada, etc.).
+// 2. Casino Model: The analysis is conducted from the perspective of an offshore online casino.
+// 3. Regulation: Specific regulatory restrictions and licensing issues (e.g., UKGC, MGA) are to be ignored and not taken into account.
+// URL ANALYSIS SCENARIO:
+// If a URL is provided as input instead of a document, your protocol is as follows:
+// 1. Full Review: Thoroughly examine the entire site. Do not limit yourself to the homepage.
+// 2. Identify All Promotions: Find all promotional offers available to players (welcome bonuses, reloads, cashback, tournaments, etc.).
+// 3. Prioritize Key Pages: Your analysis must be based on a detailed examination of pages such as Promo, Promotions, Loyalty, VIP, and especially Terms and Conditions / Bonus Terms. The details in the T&Cs are critical for assessing financial viability and risks.
+// 4. Synthesis and Audit: After gathering all information, proceed to the PROMO STRATEGY AUDIT PROTOCOL, completing the template according to your findings.
+// PROTOCOL FOR HANDLING INCOMPLETE INFORMATION:
+// If the initial information provided (document or URL) is incomplete, you do not halt the analysis. Instead, you proceed as follows:
+// 1. Proceed with the Audit: Your primary directive is to conduct the full audit regardless of information gaps. Use your industry knowledge, experience, and benchmarks to fill in the blanks with high-confidence assumptions.
+// 2. Proactive Investigation: You must attempt to find the missing information independently through public sources.
+// 3. Integrate a "Request for Data" Block: In your final report, after the "Executive Summary" and before the "Sources and Benchmarks," you must include a dedicated section. This section will be titled "Data Gaps and Clarification Request for a High-Precision Audit."
+// 4. Content of the Block:
+// - State clearly what information you were able to find publicly versus what had to be modeled based on industry benchmarks.
+// - Present a clear, bulleted list of questions requesting specific internal data points required for a more precise analysis. Examples include:
+// - What is the current breakdown of your player base by RFM segments?
+// - What are the actual 7-day, 14-day, and 30-day retention rates for cohorts acquired through the welcome bonus?
+// - What is the calculated average bonus cost per depositing player?
+// - Can you provide the current LTV for players from your top 3 GEOs?
+// - What is the total overhead cost (salaries, gifts, travel) associated with the VIP program?
+// - Conclude by explaining that providing this data will elevate the audit from a strategic model to a financially precise action plan. State explicitly: "While this audit is based on robust industry models, providing the requested internal data will allow for a significantly more accurate and impactful revision of our P&L forecasts and strategic initiatives."
+// PRIMARY OBJECTIVE: PROMO STRATEGY AUDIT PROTOCOL
+// Your main task is to conduct a comprehensive audit of the entire casino promo strategy, including (but not limited to):
+// - Welcome Packages / Offers (including a description of all bonuses within the package)
+// - All "regular" weekly bonuses (e.g., Monday free spins)
+// - Reload Bonuses
+// - Cashback Offers
+// - Gamification
+// - Internal Lottery
+// - Loyalty Programs
+// - VIP Clubs
+// - Referral program
+// - Jackpots: Network jackpots with very large prizes (e.g., Grand Trophy "Prime Network") and local/in-house jackpots (e.g., Grand Trophy "Mini")
+// - Tournaments and other activities
+// EVALUATION CRITERIA (to be applied to EVERY element of the promo strategy):
+// 1. Player Appeal: How attractive and clear is the offer for a player from Tier-1 markets? Analyze psychological triggers, perceived value, behavioral patterns, including motivational mechanics (e.g., scarcity, instant gratification, social comparison).
+// 2. Financial Viability: Is the offer financially sustainable? Conduct a detailed analysis of the terms (wagering requirements, withdrawal limits, loyalty point cost, VIP manager overhead, etc.) to model its cost and ROI. Consider alternative scenarios with parameter changes and their impact on ROI and P&L.
+// 3. Market Competitiveness: Compare the offer against current industry standards among offshore casinos for Tier-1 markets. You are required to provide industry average benchmarks for comparison (e.g., average wager for bonus+deposit is ~x35; typical loyalty point conversion rates; standard VIP club privileges), and cite your sources.
+// 4. Success Potential and Risks: Assess the likelihood of achieving the offer's goals (acquisition, retention, LTV growth). Identify risks: bonus hunting, multi-accounting, VIP status abuse, negative player feedback, technical/UX barriers.
+// ADDITIONAL ANALYTICAL BLOCK (FOR EACH ELEMENT):
+// 5. UNIT ECONOMICS AND UX FACTORS
+// - Predicted Lifetime Value (pLTV) of a player within the mechanic
+// - Calculation of direct and indirect costs per user (CAC, bonus cost, VIP overhead)
+// - Average post-bonus Retention (1D / 7D / 14D / 30D)
+// - UX Friction: number of actions to activate, clarity of terms, mobile flow
+// - A/B Hypothesis: a specific test hypothesis proposal and expected outcome
+// - Vulnerabilities to Abuse (arbitrage, cyclical withdrawals, abuse scenarios) and protective mechanisms
+// FINAL DOCUMENT (Mandatory Output Format):
+// Your response MUST be a structured, expert report containing the following components in order:
+// 1. Overall Promo Strategy Score: An integer on a scale of 0 to 10.
+// 2. Executive Summary: 3-4 sentences outlining the key strengths and weaknesses of the entire strategy and your final verdict.
+// 3. Data Gaps and Clarification Request for a High-Precision Audit: (If applicable, as per the protocol above).
+// 4. Sources and Benchmarks: A separate section listing the competitor brands used for comparison (e.g., "Stake.com, lalabet.com, spinstar.bet") and a rationale for key metrics (e.g., "A max bet of €5 is standard for X, Y, Z because...").
+// 5. Detailed Analysis: A structured breakdown of EACH promo strategy element (e.g., "Welcome Bonus Analysis," "Loyalty Program Analysis," "VIP Club Analysis") with a comprehensive evaluation covering all six blocks.
+// 6. Actionable Recommendations: A clear, prioritized list of improvements. For each recommendation: a brief rationale (e.g., "Change wagering from x45 to x30; this will reduce churn by 12% and increase net ROI by +9%").
+// 7. Hypotheses and Experiments: At least one A/B test hypothesis for each key promotional element (if applicable).
+// TASK:
+// Using the protocol described above, conduct a deep and comprehensive audit of the entire promo strategy.
+// Your final output must be a single, self-contained HTML file, ready for copying and use. All CSS and JavaScript must be embedded directly within the HTML document. Present the entire code in a single, complete block. Begin the analysis immediately.
+// =================================================================== //
+// END OF INTERNAL AI INSTRUCTIONS                                     //
+// =================================================================== //
+-->
+    <title>Шаблон Аудита Промо-стратегии</title>
+    <style>
+        :root {
+            --bg-color: #111827;
+            --card-bg: #1f2937;
+            --text-color: #d1d5db;
+            --header-color: #f9fafb;
+            --accent-color: #3b82f6;
+            --border-color: #374151;
+            --shadow-color: rgba(0, 0, 0, 0.2);
+            --code-bg: #111827;
+            --placeholder-color: #6b7280;
+            --score-low: #e57373; /* Red */
+            --score-mid: #ffb74d; /* Orange */
+            --score-high: #81c784; /* Green */
+        }
+
+        body.light-theme {
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --text-color: #4b5563;
+            --header-color: #111827;
+            --accent-color: #2563eb;
+            --border-color: #e5e7eb;
+            --shadow-color: rgba(0, 0, 0, 0.05);
+            --code-bg: #f3f4f6;
+            --placeholder-color: #9ca3af;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 17px;
+            line-height: 1.7;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container { max-width: 850px; margin: 0 auto; padding: 20px; }
+        
+        .top-controls { text-align: right; margin-bottom: 20px; }
+
+        .theme-switcher-button {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s ease-in-out;
+        }
+        .theme-switcher-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px var(--shadow-color);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .header h1 { color: var(--header-color); font-size: 2em; font-weight: 700; margin-bottom: 8px; }
+        .header h3 { color: var(--text-color); font-weight: 400; font-style: italic; font-size: 1.2em; }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px var(--shadow-color);
+            transition: background-color 0.3s, border-color 0.3s;
+            page-break-inside: avoid;
+        }
+        
+        .sub-card {
+            background-color: var(--bg-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card h2 {
+            color: var(--header-color);
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .card h3 { color: var(--header-color); font-size: 1.3em; margin: 0 0 15px 0; }
+        .card h4 { color: var(--header-color); font-size: 1.1em; margin: 0 0 15px 0; font-weight: 600; }
+
+        p, li { margin-bottom: 12px; }
+        ul, ol { padding-left: 0; list-style-type: none; }
+        ul li::before { content: '•'; margin-right: 10px; color: var(--accent-color); font-weight: bold; }
+        ol li {
+            counter-increment: list-counter;
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        ol li::before {
+            content: counter(list-counter);
+            background: var(--accent-color);
+            color: #ffffff;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 1.7em;
+            height: 1.7em;
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1.7em;
+            margin-right: 15px;
+        }
+        
+        strong { color: var(--accent-color); font-weight: 600; }
+        code { background-color: var(--code-bg); padding: 3px 7px; border-radius: 4px; font-family: 'SF Mono', 'Fira Code', monospace; border: 1px solid var(--border-color); }
+        .placeholder { color: var(--placeholder-color); font-style: italic; }
+        
+        .analysis-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .analysis-item { padding: 15px; border: 1px solid var(--border-color); border-radius: 6px; }
+        .analysis-item h4 { font-size: 1em; display: flex; justify-content: space-between; align-items: center; }
+        
+        .score {
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--bg-color) !important;
+            transition: background-color 0.3s ease;
+        }
+        .score-low { background-color: var(--score-low); }
+        .score-mid { background-color: var(--score-mid); }
+        .score-high { background-color: var(--score-high); }
+
+
+        #actions-container { margin-top: 40px; }
+        .action-group { display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: center; }
+        .btn-action {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-action:hover { opacity: 0.85; transform: translateY(-2px); }
+        
+        .email-group { display: flex; gap: 10px; flex-grow: 1; align-items: center; }
+        .email-input {
+            flex-grow: 1;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: 16px;
+        }
+        .email-instructions { font-size: 14px; margin-top: 10px; opacity: 0.8; width: 100%; text-align: center; }
+
+        @media print {
+            body { background-color: #ffffff; color: #000000; }
+            .top-controls, #actions-container { display: none; }
+            .card, .sub-card, .header { box-shadow: none; border: 1px solid #e5e7eb; }
+            :root { --card-bg: #ffffff; --text-color: #111827; --header-color: #000000; --accent-color: #2563eb; }
+            .placeholder { color: #6c757d; }
+            .score { color: #000 !important; }
+            .score-low { background-color: #ffcdd2 !important; }
+            .score-mid { background-color: #ffe0b2 !important; }
+            .score-high { background-color: #c8e6c9 !important; }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <div class="top-controls">
+            <button id="theme-switcher" class="theme-switcher-button">☀️ Сменить тему</button>
+        </div>
+        
+        <div class="header">
+            <h1>Аудит Промо-стратегии</h1>
+            <h3>Проект: «[Название проекта]»</h3>
+        </div>
+        
+        <section id="analysis-section">
+
+            <div class="card">
+                <h3>Итоговая оценка стратегии: <span class="score">6/10</span></h3>
+                <p id="executive-summary" class="placeholder">[Сжатое заключение: 3-4 предложения, отражающие общее состояние промо-стратегии. Ключевые сильные стороны (например, сильный VIP-онбординг, финансово-устойчивый кэшбэк). Основные уязвимости и риски (например, отсутствие регулярных бонусов, плохой UX в программе лояльности, неконкурентный вейджер). Итоговый вердикт и приоритет действий (например, "требует немедленной диверсификации и UX-оптимизации" или "является прочной базой, требующей точечной доработки").]</p>
+            </div>
+
+            <div class="card">
+                <h2>Запрос данных для высокоточного аудита</h2>
+                <p>Данный аудит основан на отраслевых бенчмарках и моделях. Для перехода от стратегического моделирования к финансово точному плану действий требуется предоставить следующие внутренние данные:</p>
+                <ul>
+                    <li>Актуальная разбивка базы игроков по RFM-сегментам (Recency, Frequency, Monetary).</li>
+                    <li>Фактические показатели Retention Rate (D7, D14, D30) для когорт, привлеченных через каждый тип Welcome Offer.</li>
+                    <li>Рассчитанная средняя стоимость бонуса на одного игрока, совершившего депозит (Bonus Cost per FTD).</li>
+                    <li>Текущий LTV по топ-3 GEOs и в разрезе ключевых промо-когорт.</li>
+                    <li>Общие накладные расходы на VIP-программу (зарплаты менеджеров, стоимость подарков, поездок).</li>
+                    <li>Данные по воронке активации ключевых промо (сколько игроков увидели, кликнули, успешно активировали).</li>
+                </ul>
+                <p><strong>Предоставление этих данных позволит значительно повысить точность P&L-прогнозов и результативность стратегических инициатив.</strong></p>
+            </div>
+
+             <div class="card">
+                <h2>Источники и Бенчмарки</h2>
+                <p>Анализ проводится в сравнении с лидерами offshore-рынка в Tier-1 геолокациях. Основные конкуренты для бенчмаркинга:</p>
+                <ul>
+                    <li><strong>Конкуренты:</strong> <span class="placeholder">[Конкурент 1.com], [Конкурент 2.com], [Конкурент 3.com].</span></li>
+                    <li><strong>Ключевые бенчмарки:</strong>
+                        <br>- <strong>Вейджер:</strong> <span class="placeholder">[Привести средний по рынку вейджер, например, x35 на (B+D), и объяснить, почему он является стандартом.]</span>
+                        <br>- <strong>Макс. ставка:</strong> <span class="placeholder">[Указать стандартную макс. ставку с бонусом, например, €5, и обосновать ее с точки зрения баланса рисков и привлекательности.]</span>
+                        <br>- <strong>Стоимость очков лояльности:</strong> <span class="placeholder">[Указать стандартный % возврата от оборота через очки, например, 0.1% - 0.3%, и объяснить модель расчета.]</span>
+                        <br>- <strong>Кэшбэк:</strong> <span class="placeholder">[Описать лучшую практику на рынке, например, "кэшбэк на чистый проигрыш (Net Loss) по формуле (Депозиты - Выводы - Баланс)", и почему это важно.]</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Детальный аудит компонентов</h2>
+
+                <div class="sub-card">
+                    <h4>1. Анализ Welcome Offer</h4>
+                    <p><strong>Описание:</strong> <span class="placeholder">[Краткое описание механики приветственного пакета: количество бонусов, проценты, суммы, фриспины, условия активации.]</span></p>
+                    <div class="analysis-grid">
+                        <div class="analysis-item"><h4>Привлекательность <span class="score">6/10</span></h4><p class="placeholder">[Анализ психологических триггеров, ясности, воспринимаемой ценности. Насколько "цепляет" оффер?]</p></div>
+                        <div class="analysis-item"><h4>Финансовая состоятельность <span class="score">9/10</span></h4><p class="placeholder">[Анализ вейджера, лимитов кэшаута, макс. ставки. Моделирование стоимости бонуса. Насколько это безопасно для P&L?]</p></div>
+                        <div class="analysis-item"><h4>Конкурентоспособность <span class="score">7/10</span></h4><p class="placeholder">[Сравнение с бенчмарками и конкурентами. Насколько предложение выделяется на рынке?]</p></div>
+                        <div class="analysis-item"><h4>Риски и потенциал <span class="score">4/10</span></h4><p class="placeholder">[Оценка вероятности достижения цели (привлечение). Риски: бонус-хантинг, негативный UX, технические барьеры.]</p></div>
+                    </div>
+                    <div class="sub-card">
+                         <h4>Unit Economics и UX</h4>
+                         <ul>
+                            <li><strong>pLTV (прогноз):</strong> <span class="placeholder">[Прогноз LTV для игрока, привлеченного этим бонусом.]</span></li>
+                            <li><strong>Затраты на пользователя:</strong> <span class="placeholder">[Прогноз CAC и стоимости бонуса на FTD.]</span></li>
+                            <li><strong>Retention (прогноз):</strong> <span class="placeholder">[Прогноз D7/D14/D30 Retention.]</span></li>
+                            <li><strong>UX Friction:</strong> <span class="placeholder">[Оценка сложности активации: количество кликов, понятность правил, мобильная адаптация.]</span></li>
+                            <li><strong>Уязвимости:</strong> <span class="placeholder">[Описание возможных схем злоупотребления и имеющихся защитных механизмов.]</span></li>
+                         </ul>
+                    </div>
+                </div>
+                
+                <div class="sub-card">
+                    <h4>2. Анализ Регулярных Бонусов (Reloads, Weekly FS)</h4>
+                    <p class="placeholder">[Если регулярные бонусы отсутствуют, указать это как критический недостаток. Если есть, описать каждый.]</p>
+                    <p><strong>Описание:</strong> <span class="placeholder">[Например: "Пятничный релоад 50% до €100". Условия, частота.]</span></p>
+                    <div class="analysis-grid">
+                        <div class="analysis-item"><h4>Привлекательность <span class="score">2/10</span></h4><p class="placeholder">[Анализ ценности для существующего игрока. Создает ли это повод для возврата?]</p></div>
+                        <div class="analysis-item"><h4>Финансовая состоятельность <span class="score">[X/10]</span></h4><p class="placeholder">[Анализ условий. Насколько затратны эти бонусы для удержания?]</p></div>
+                        <div class="analysis-item"><h4>Конкурентоспособность <span class="score">[X/10]</span></h4><p class="placeholder">[Сравнение с регулярными предложениями конкурентов.]</p></div>
+                        <div class="analysis-item"><h4>Риски и потенциал <span class="score">[X/10]</span></h4><p class="placeholder">[Потенциал для увеличения частоты депозитов. Риски: привыкание, игра только "по пятницам".]</p></div>
+                    </div>
+                </div>
+
+                <div class="sub-card">
+                    <h4>3. Анализ Системы Кэшбэка</h4>
+                    <p><strong>Описание:</strong> <span class="placeholder">[Опишите механизм кэшбэка: % ставки, частота, формула расчета (на депозиты, на проигрыш), вейджер на кэшбэк.]</span></p>
+                    <div class="analysis-grid">
+                        <div class="analysis-item"><h4>Привлекательность <span class="score">8/10</span></h4><p class="placeholder">[Психологический эффект "страховки от проигрыша". Понятность для игрока.]</p></div>
+                        <div class="analysis-item"><h4>Финансовая состоятельность <span class="score">[X/10]</span></h4><p class="placeholder">[Анализ формулы на предмет уязвимостей (кэшбэк "вилочникам"). Насколько модель защищена?]</p></div>
+                        <div class="analysis-item"><h4>Конкурентоспособность <span class="score">[X/10]</span></h4><p class="placeholder">[Сравнение частоты и формулы с лидерами рынка.]</p></div>
+                        <div class="analysis-item"><h4>Риски и потенциал <span class="score">[X/10]</span></h4><p class="placeholder">[Потенциал для увеличения LTV и удержания. Риски злоупотреблений.]</p></div>
+                    </div>
+                </div>
+
+                <div class="sub-card">
+                    <h4>4. Анализ Программы Лояльности и Геймификации</h4>
+                    <p><strong>Описание:</strong> <span class="placeholder">[Описание уровней, системы очков (CP), магазина, ачивок и других элементов геймификации.]</span></p>
+                     <div class="analysis-grid">
+                        <div class="analysis-item"><h4>Привлекательность <span class="score">5/10</span></h4><p class="placeholder">[Насколько система мотивирует к долгосрочной игре? Понятность прогресса, ценность наград.]</p></div>
+                        <div class="analysis-item"><h4>Финансовая состоятельность <span class="score">[X/10]</span></h4><p class="placeholder">[Расчет стоимости очков лояльности как % от оборота. Оценка затрат на призы.]</p></div>
+                        <div class="analysis-item"><h4>Конкурентоспособность <span class="score">[X/10]</span></h4><p class="placeholder">[Сравнение с программами лояльности конкурентов по простоте и щедрости.]</p></div>
+                        <div class="analysis-item"><h4>Риски и потенциал <span class="score">[X/10]</span></h4><p class="placeholder">[Потенциал для создания "липкости" продукта. Риски: сложность, вызывающая отторжение, низкая воспринимаемая ценность.]</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Стратегические Рекомендации (План действий)</h2>
+                <ol>
+                    <li>
+                        <div>
+                            <strong><span class="placeholder">[Название рекомендации 1, например, "Оптимизировать Welcome Offer"]</span></strong>
+                            <p><strong>Действие:</strong> <span class="placeholder">[Четкое и конкретное действие. Например: "Изменить вейджер с x40(B+D) на x35(B). Заменить механику X на Y."]</span>
+                            <br><strong>Обоснование и KPI:</strong> <span class="placeholder">[Объяснение, почему это нужно сделать, с прогнозом. Например: "Это повысит конверсию в FTD на 5% и снизит ранний отток. Отслеживать: Conversion Rate, D7 Retention." ]</span></p>
+                        </div>
+                    </li>
+                     <li>
+                        <div>
+                            <strong><span class="placeholder">[Название рекомендации 2, например, "Внедрить регулярные промо"]</span></strong>
+                            <p><strong>Действие:</strong> <span class="placeholder">[Например: "Запустить еженедельный релоад-бонус по средам и турнир выходного дня."]</span>
+                            <br><strong>Обоснование и KPI:</strong> <span class="placeholder">[Например: "Это создаст регулярные поводы для возврата и увеличит активность в середине недели. KPI: Weekly Active Users, среднее число депозитов в неделю." ]</span></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="card">
+                <h2>Гипотезы для A/B-тестирования</h2>
+                <ol>
+                    <li>
+                        <div>
+                            <strong><span class="placeholder">[Название гипотезы 1 (например, по Welcome Offer)]</span></strong>
+                            <p><strong>Гипотеза:</strong> <span class="placeholder">[Формулировка гипотезы, например, "Фиксированное количество FS в Welcome Offer повысит D7 Retention по сравнению с лотерейной механикой."]</span>
+                            <br><strong>Группа А (Контроль):</strong> <span class="placeholder">[Описание текущей механики.]</span>
+                            <br><strong>Группа B (Тест):</strong> <span class="placeholder">[Описание новой механики.]</span>
+                            <br><strong>Ожидаемый результат:</strong> <span class="placeholder">[Конкретные ожидания в цифрах, например, "Группа B покажет +15% к D7 Retention и +10% к конверсии во второй депозит."]</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <strong><span class="placeholder">[Название гипотезы 2 (например, по Релоад-бонусу)]</span></strong>
+                            <p><strong>Гипотеза:</strong> <span class="placeholder">[Например, "Персонализированный релоад-бонус на основе RFM-сегмента покажет более высокий ROI, чем общий бонус для всех."]</span>
+                            <br><strong>Группа А (Контроль):</strong> <span class="placeholder">[Общий релоад 50% для всех.]</span>
+                            <br><strong>Группа B (Тест):</strong> <span class="placeholder">[Игрокам с высоким F - 30% релоад, игрокам с низким F - 70% релоад.]</span>
+                            <br><strong>Ожидаемый результат:</strong> <span class="placeholder">[Например, "Общий Bonus Cost в группе B будет на 20% ниже при сохранении того же уровня недельного оборота."]</span></p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+             <div id="actions-container" class="card">
+                <div class="action-group">
+                    <button id="save-report-pdf" class="btn-action">Сохранить отчет в PDF</button>
+                    <div class="email-group">
+                        <input type="email" id="recipient-email" class="email-input" placeholder="email получателя">
+                        <button id="send-report-email" class="btn-action">Отправить по Email</button>
+                    </div>
+                </div>
+                <p class="email-instructions">Чтобы отправить, введите адрес, затем прикрепите сохраненный PDF-файл к письму.</p>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeSwitcher = document.getElementById('theme-switcher');
+            const body = document.body;
+            const savePdfBtn = document.getElementById('save-report-pdf');
+            const sendEmailBtn = document.getElementById('send-report-email');
+            const emailInput = document.getElementById('recipient-email');
+
+            function applyTheme(theme) {
+                if (theme === 'light-theme') {
+                    body.classList.add('light-theme');
+                    body.classList.remove('dark-theme');
+                    themeSwitcher.innerHTML = '🌙 Сменить тему';
+                } else {
+                    body.classList.add('dark-theme');
+                    body.classList.remove('light-theme');
+                    themeSwitcher.innerHTML = '☀️ Сменить тему';
+                }
+                localStorage.setItem('theme', theme);
+            }
+
+            function updateScoreColors() {
+                const scoreElements = document.querySelectorAll('.score');
+                scoreElements.forEach(el => {
+                    el.classList.remove('score-low', 'score-mid', 'score-high');
+                    
+                    const text = el.textContent.trim();
+                    const scoreValue = parseInt(text, 10);
+
+                    if (!isNaN(scoreValue)) {
+                        if (scoreValue <= 3) {
+                            el.classList.add('score-low');
+                        } else if (scoreValue <= 6) {
+                            el.classList.add('score-mid');
+                        } else {
+                            el.classList.add('score-high');
+                        }
+                    }
+                });
+            }
+
+            themeSwitcher.addEventListener('click', () => {
+                const newTheme = body.classList.contains('light-theme') ? 'dark-theme' : 'light-theme';
+                applyTheme(newTheme);
+            });
+
+            savePdfBtn.addEventListener('click', () => { window.print(); });
+
+            sendEmailBtn.addEventListener('click', () => {
+                const recipient = emailInput.value;
+                if (!recipient || !recipient.includes('@')) {
+                    alert('Пожалуйста, введите корректный email адрес получателя.');
+                    emailInput.focus();
+                    return;
+                }
+
+                const subject = document.querySelector('.header h1').innerText.trim();
+                const summaryElement = document.getElementById('executive-summary');
+                let summary = summaryElement.textContent.trim();
+
+                if (summaryElement.classList.contains('placeholder')) {
+                    summary = "Аудит промо-стратегии готов. Пожалуйста, откройте прикрепленный PDF для ознакомления с полным отчетом.";
+                }
+                
+                const bodyText = `
+Уважаемый(-ая) коллега,
+
+Направляю Вам результаты аудита промо-стратегии проекта «${document.querySelector('.header h3').innerText.replace('Проект: «', '').replace('»', '')}».
+
+**Ключевые выводы:**
+${summary}
+
+Полный отчет с детальным анализом и планом действий доступен для ознакомления (предполагается прикрепление PDF-версии к этому письму).
+
+С уважением.
+                `;
+
+                const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyText)}`;
+                window.location.href = mailtoLink;
+            });
+            
+            const savedTheme = localStorage.getItem('theme') || 'dark-theme';
+            applyTheme(savedTheme);
+
+            updateScoreColors();
+        });
+    </script>
+</body>
+</html>
