@@ -66,6 +66,5 @@
 // TASK:
 // Using the protocol described above, conduct a deep and comprehensive audit of the entire promo strategy.
 // Your final output must be a single, self-contained HTML file, ready for copying and use. All CSS and JavaScript must be embedded directly within the HTML document. Present the entire code in a single, complete block. Begin the analysis immediately.
-// =================================================================== //
-// END OF INTERNAL AI INSTRUCTIONS                                     //
-// =================================================================== //
+//  END OF INTERNAL AI INSTRUCTIONS   //
+
